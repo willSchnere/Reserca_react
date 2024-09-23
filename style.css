@@ -1,0 +1,13 @@
+*{
+    padding: auto;
+    height: auto;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    color: rgb(20, 202, 32);
+}
+.Soma{
+    height: 80vh;
+}
+.resultado{
+    font-size: 3em;
+}
