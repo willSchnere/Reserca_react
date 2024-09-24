@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <table border="1">
+        <tr>
+            <td onclick="makeMove(0)" id="cell-0" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(1)" id="cell-1" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(2)" id="cell-2" width="50" height="50" align="center"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(3)" id="cell-3" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(4)" id="cell-4" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(5)" id="cell-5" width="50" height="50" align="center"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(6)" id="cell-6" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(7)" id="cell-7" width="50" height="50" align="center"></td>
+            <td onclick="makeMove(8)" id="cell-8" width="50" height="50" align="center"></td>
+        </tr>
+    </table>
+    
+    <h2 id="status"></h2>
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
