@@ -3,22 +3,22 @@ let currentPlayer = "X";
 let isGameActive = true;
 
 const winCombinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8],  // Linhas
-    [0, 3, 6], [1, 4, 7], [2, 5, 8],  // Colunas
-    [0, 4, 8], [2, 4, 6]              // Diagonais
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],  
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],  
+    [0, 4, 8], [2, 4, 6]             
 ];
 
-// Função para fazer um movimento
+
 function makeMove(index) {
     if (board[index] === "" && isGameActive) {
         board[index] = currentPlayer;
         document.getElementById(`cell-${index}`).textContent = currentPlayer;
         checkResult();
-        currentPlayer = currentPlayer === "X" ? "O" : "X";  // Alterna jogador
+        currentPlayer = currentPlayer === "X" ? "O" : "X";  
     }
 }
 
-// Função para verificar o resultado
+
 function checkResult() {
     let roundWon = false;
 
@@ -52,7 +52,7 @@ function checkResult() {
     document.getElementById('status').textContent = `Vez do jogador ${currentPlayer}`;
 }
 
-// Função para reiniciar o jogo
+
 function resetGame() {
     board = ["", "", "", "", "", "", "", "", ""];
     isGameActive = true;
